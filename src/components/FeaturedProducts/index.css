@@ -1,0 +1,130 @@
+
+.main-feature-container{
+    margin-top: 30px;
+}
+
+
+
+.feature-product{
+    padding-top: 30px;
+    display: flex;
+}
+
+.feature-product-heading{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+    flex: 1;
+
+}
+
+
+
+.feature-button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.feature-heading{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+    
+
+}
+.stone-image{
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    margin: 5px;
+}
+
+/* all device full clear responsive   */
+
+@media screen and (max-width: 1200px) {
+    .feature-product{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        /* box-shadow */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+   .stone-image{
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 0;
+    }
+}
+
+/* 768px to 1200px */
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    .feature-product{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+   .stone-image{
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 0;
+    }
+}
+
+/* 480px to 768px */
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    .feature-product{
+        flex-direction: column;
+        align-items: center;
+       margin-top: 5px;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+   .stone-image{
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 0;
+    }
+}
+
+/* 320px to 480px */
+
+@media screen and (max-width: 480px) {
+    .feature-product{
+        flex-direction: column;
+        align-items: center;
+         margin-top: 5px;
+    }
+   .stone-image{
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 0;
+    }
+}
+
+/* 320px to 480px */
+
+@media screen and (max-width: 320px) {
+    .feature-product{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+   .stone-image{
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 0;
+    }
+}
+
+

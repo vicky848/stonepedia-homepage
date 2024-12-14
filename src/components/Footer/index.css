@@ -1,0 +1,216 @@
+.footer-container{
+    background-color: rgb(8, 8, 8);
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ 
+
+}
+
+
+.social-media-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding-top: 30px;
+    
+
+    
+
+}
+.fab{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.social-media-links a{
+    color: rgb(15, 15, 15);
+    text-decoration: none;
+}
+
+.social-media-links li{
+    background-color: #ffffff;
+    height: 70px;
+    padding: 10px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    
+    margin: 10px;
+    animation: slide 5s ease-in-out infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+.social-media-links  .facebook:hover{
+    color: rgb(16, 18, 184);
+    font-size: 33px;
+    
+}
+
+.social-media-links  .twitter:hover{
+    color: rgb(85, 172, 238);
+    font-size: 33px;
+}
+
+.social-media-links  .instagram:hover{
+    color: rgb(219, 70, 54);
+    font-size: 33px;
+}
+
+.social-media-links  .linkedin:hover{
+    color: rgb(0, 119, 181);
+    font-size: 33px;
+}
+
+.social-media-links  .github:hover{
+    color: rgb(241, 196, 45);
+    font-size: 33px;
+}
+
+
+
+.social-media-links .you-tube:hover{
+    color: rgb(255, 0, 0);
+    font-size: 33px;
+}
+.copy{
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.copy a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+.power{
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 20px;
+    margin-top: 80px;
+}
+.company-info{
+    color: #ffffff;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    width: 500px;
+    animation: slide 20s ease-in-out infinite;
+    animation-timing-function: ease-in-out;
+}
+.legal-and-policy-links{
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    animation: slideFormRight 2s ease-in-out infinite;
+    animation-timing-function: ease-in-out;
+
+}
+.disclaimer{
+    color: #ffffff;
+    margin-top: 30px;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+.legal-and-policy{
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 20px;
+    margin-top: 30px;
+    
+   
+   
+    
+}
+
+
+
+
+
+
+
+
+.footer-link{
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 30px; 
+    font-family: "Roboto";
+}
+
+/* all device full clear responsive   */ 
+
+@media screen and (max-width: 1200px) {
+   .footer-container{
+        height: 100vh;
+    }
+   .social-media-links li{
+        margin: 10px;
+    }
+   .social-media-links{
+        flex-direction: column;
+    }
+   .social-media-links a{
+        margin-top: 10px;
+    }
+   .company-info{
+        width: 100%;
+    }
+   .legal-and-policy-links{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .social-media-links li{
+        margin: 3px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social-media-links li{
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .social-media-links li{
+        margin: 1px;
+    }
+}
+
+/* mobile device and tab device stop amination */
+
+@media screen and (max-width: 576px) {
+    .social-media-links li{
+        animation: none;
+    }
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes slideFormRight {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+/* company-info
+ stop amination */
+
+ @media screen and (max-width: 576px) {
+    .company-info{
+        animation: none;
+    }
+}

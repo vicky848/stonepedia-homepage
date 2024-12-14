@@ -1,0 +1,28 @@
+.navbar{
+    height: 70px;
+    color: white;
+}
+.navbar .navbar-brand{
+    font-size: 24px;
+    margin-left: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.navbar .nav-link{
+    color: white;
+    margin-right: 20px;
+}
+
+.navbar .nav-link :hover{
+    color: #73a811;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 70px;
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+}

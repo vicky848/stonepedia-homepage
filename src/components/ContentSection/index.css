@@ -1,0 +1,128 @@
+.content-container{
+    background-image: url("https://images.pexels.com/photos/6634136/pexels-photo-6634136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.redefining-text{
+    font-size: 36px;
+    color: rgb(167, 11, 120);
+    text-align: center;
+   padding-top: 30px;
+  
+    font-family: "Roboto";
+    font-weight: 600;
+    /* slide */
+    animation: slide 20s infinite;
+
+}
+
+.header{
+    font-size: 36px;
+    color: rgb(212, 199, 14);
+    text-align: center;
+    padding-top: 30px;
+    font-family: "Roboto";
+    font-weight: 600;
+  /* flip-up */
+  animation: flip-up 10s infinite;
+
+
+}
+
+
+
+
+.content-main-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+
+.card{
+    height: 150px;
+    width: 500px;
+    margin: 5px;
+
+   
+    
+}
+.content-header{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.button-container{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.button{
+    padding: 10px 20px;
+    background-color: #87d608;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 132px;
+   
+
+}
+/* all device full clear responsive   */
+
+@media (max-width: 768px) {
+    /* smaller screens */
+   .content-container{
+    height: 100vh;
+    }
+   .redefining-text{
+    font-size: 24px;
+    padding-top: 10px;
+    }
+   .header{
+    font-size: 24px;
+    padding-top: 10px;
+    }
+   .content-main-card{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+   .card{
+    height: 100px;
+    width: 300px;
+    margin: 5px;
+    }
+   .content-header{
+    font-size: 16px;
+    margin-bottom: 5px;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes flip-up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+

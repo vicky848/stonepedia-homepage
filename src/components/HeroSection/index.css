@@ -1,0 +1,348 @@
+.hero-background-section-container{
+  
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+
+
+
+}
+.background-video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+  
+
+}
+
+.overlay{
+    position: absolute;
+    background-image: url("https://images.pexels.com/photos/6952650/pexels-photo-6952650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    top: 20%;
+    left: 50%;
+    
+    z-index: 3;
+    background-position: center;
+    animation: slide 10s infinite;
+    transition: background-color 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+   
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    
+    
+
+    
+   
+      
+    
+    
+}
+/* @keyframes for circular motion */
+
+@keyframes circular {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+
+
+
+
+.overlay h1{
+    margin-top: 40px;
+    font-size :20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(5, 5, 5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+.overlay p{
+   font-size: 18px;
+   font-family: sans-serif;
+   font-style: italic;
+   font-weight: bold;
+   color: rgb(19, 17, 17);
+   margin-top: 40px;
+
+}
+
+.overlay button{
+    font-size:15px;
+    font-weight: bold;
+    background-color: #FFC107;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: 32px;
+    width: 131px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.overlay button:hover{
+    background-color: #FFA726;
+}
+
+/* all device full clear responsive   */
+
+@media only screen and (max-width: 600px){
+    .hero-background-section-container{
+        height: 400px;
+    }
+    .background-video{
+        height: 400px;
+    }
+    .overlay{
+        height: 200px;
+        width: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-size: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .overlay h1{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .overlay p{
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .overlay button{
+        font-size: 13px;
+        height: 25px;
+        width: 100px;
+    }
+    .hero-background-section-container .hero-background-section-container::before {
+        display: none;
+    }
+    .hero-background-section-container .hero-background-section-container::after {
+        display: block;
+        content: "";
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .hero-background-section-container .hero-background-section-container::after {
+        animation: gradient 5s infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .hero-background-section-container .hero-background-section-container::after {
+        background: linear-gradient(to bottom right, #f1f1f1, #ffffff);
+    }
+    .hero-background-section-container .hero-background-section-container::before {
+        content: "";
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .hero-background-section-container .hero-background-section-container::before {
+        animation: gradient 5s infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .hero-background-section-container .hero-background-section-container::before {
+        background: linear-gradient(to bottom right, #f1f1f1, #ffffff);
+    }
+    .hero-background-section-container .hero-background-section-container::after {
+        animation: gradient 5s infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .hero-background-section-container .hero-background-section-container::after {
+        background: linear-gradient(to bottom right, #f1f1f1, #ffffff);
+    }
+}
+
+/* all device full responsive   */
+
+@media only screen and (max-width: 480px){
+    .hero-background-section-container{
+        height: 300px;
+    }
+    .background-video{
+        height: 300px;
+    }
+    .overlay{
+        height: 150px;
+        width: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-size: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .overlay h1{
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    .overlay p{
+        font-size: 11px;
+        margin-top: 15px;
+    }
+    .overlay button{
+        font-size: 11px;
+        height: 20px;
+        width: 80px;
+    }
+
+    .hero-background-section-container .hero-background-section-container::before {
+        display: none;
+    }
+    .hero-background-section-container .hero-background-section-container::after {
+        display: block;
+        content: "";
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .hero-background-section-container .hero-background-section-container::after {
+        animation: gradient 5s infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .hero-background-section-container .hero-background-section-container::before {
+        content: "";
+        background-color: #f1f1f1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .hero-background-section-container .hero-background-section-container::before {
+        animation: gradient 5s infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .hero-background-section-container .hero-background-section-container::after {
+        animation: gradient 5s infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    .hero-background-section-container .hero-background-section-container::after {
+        background: linear-gradient(to bottom right, #f1f1f1, #ffffff);
+    }
+    .hero-background-section-container .hero-background-section-container::before {
+        background: linear-gradient(to bottom right, #f1f1f1, #ffffff);
+    }
+    .hero-background-section-container .hero-background-section-container::after {
+        animation: gradient 5s infinite;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .hero-background-section-container .hero-background-section-container::after {
+        background: linear-gradient(to bottom right, #f1f1f1, #ffffff);
+    }
+}
