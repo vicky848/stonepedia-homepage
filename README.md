@@ -50,7 +50,7 @@ Start the development server.
 bash
 Copy code
 npm start  
-Deployment, Vercel, or any React-compatible hosting service.
+Deployment, Vercel, .
 Future Enhancements
 Integration of e-commerce functionality for direct purchases.
 Advanced filtering for stone types and features.
