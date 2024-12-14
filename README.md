@@ -1,3 +1,86 @@
+
+
+
+
+
+
+StonePedia Website
+StonePedia is a comprehensive platform designed to redefine stone sourcing with rigorous quality control, certified suppliers, and expert guidance. The website highlights featured products, services, and provides users with a seamless experience, including doorstep delivery and engaging content sections.
+
+Features
+1. Content Section
+Tagline: "Redefining Stone Sourcing."
+Highlights the key advantages of StonePedia:
+Rigorous Quality Control.
+Certified Suppliers & Compliance.
+Expert Guidance and Support.
+Commitment to Excellence.
+2. Featured Products Section
+Showcases premium products such as Carrara Marble, Black Galaxy Granite, and Calacatta Gold Marble.
+Includes details like price, availability, and buttons for "Compare" and "Wishlist."
+High-quality product images are displayed with concise descriptions.
+3. Hero Section
+A welcoming background video introduces users to StonePedia.
+Tagline: "Welcome to StonePedia – Explore the finest stones curated for you."
+Includes a call-to-action button: Explore More.
+4. Footer
+Company Information:
+Address, phone number, email, and website link.
+Social Media Links:
+Facebook, Twitter, LinkedIn, GitHub, and YouTube.
+Legal Links:
+Privacy Policy, Terms of Service, Cookie Policy, and Accessibility Statement.
+Tech Stack
+Frontend: ReactJS with CSS styling for responsiveness and aesthetics.
+Icons: React Icons (e.g., FaFacebook, FaTwitter, etc.).
+Installation Instructions
+Clone the repository.
+bash
+Copy code
+git clone https://github.com/your-repository-url  
+Navigate to the project folder.
+bash
+Copy code
+cd stonepedia  
+Install dependencies.
+bash
+Copy code
+npm install  
+Start the development server.
+bash
+Copy code
+npm start  
+Deployment, Vercel, or any React-compatible hosting service.
+Future Enhancements
+Integration of e-commerce functionality for direct purchases.
+Advanced filtering for stone types and features.
+User reviews and ratings for products.
+Contact Information
+For queries or more information, feel free to reach out:
+
+Email: info@stonepedia.com
+Phone: +1 (123) 456-7890
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
